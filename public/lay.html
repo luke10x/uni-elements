@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Form Layout</title>
+  <style>
+    /* Apply a CSS reset to remove default styling */
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    /* Create a flex container */
+    .form-container {
+      display: flex;
+      flex-direction: column;
+    }
+
+    /* Set flex properties for the inputs */
+    .form-container .input-container {
+      display: flex;
+    }
+
+    .form-container input[type="text"] {
+      flex: 1;
+      padding: 10px;
+    }
+
+    /* Set flex properties for the textarea */
+    .form-container textarea {
+      width: 100%;
+      padding: 10px;
+    }
+
+    /* Add some additional styling for visual purposes */
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      padding: 20px;
+    }
+
+    h1 {
+      margin-bottom: 20px;
+    }
+
+    .form-container {
+      margin-bottom: 20px;
+    }
+
+    button {
+      padding: 10px 20px;
+      background-color: #007bff;
+      color: #fff;
+      border: none;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <h1>Form Layout</h1>
+  <div class="form-container">
+    <div class="input-container">
+      <input type="text" placeholder="Input 1">
+      <input type="text" placeholder="Input 2">
+    </div>
+    <textarea placeholder="Textarea"></textarea>
+  </div>
+  <button>Submit</button>
+</body>
+</html>

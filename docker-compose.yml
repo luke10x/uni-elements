@@ -1,0 +1,16 @@
+version: "3"
+services:
+  webpack:
+    build:
+      context: ./
+      dockerfile: Dockerfile
+    ports:
+      - 17770:17770
+    volumes:
+      - .:/vue-app
+    working_dir: /vue-app
+    entrypoint:  '/bin/bash -c'
+    command:
+      - |
+        tail -f /dev/null
+        npm run dev
